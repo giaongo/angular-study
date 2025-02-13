@@ -13,9 +13,9 @@ import { TasksComponent } from "./tasks/tasks.component";
 export class AppComponent {
   title = 'first-angular-app';
   users = DUMMY_USERS;
-  selectedUserName= "";
+  selectedUserName: string= "";
 
   onSelectUser(id: string) {
-    this.selectedUserName =  DUMMY_USERS.find(user => user.id === id)?.name || "TASKS FOR USERS"
+    this.selectedUserName =  DUMMY_USERS.find(user => user.id === id)?.name || ""
   }
 }
